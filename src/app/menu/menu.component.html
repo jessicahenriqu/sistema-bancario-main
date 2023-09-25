@@ -1,0 +1,51 @@
+
+  
+      <div class="container">
+        <mat-card>
+          <mat-card-content>
+            <form class="conta">
+
+                <div>
+
+                    
+
+                    <div class="logo">
+
+                        <img src="./assets/macaco1.png" alt="" width="200">
+                    </div>
+
+                    <div style="display: flex; justify-content: center; align-items: center; height: 8vh;">
+                        <mat-form-field>
+                            <mat-label>Conta</mat-label>
+                            <input name="digContaapp" matInput placeholder="" [(ngModel)]="idConta"> 
+                          </mat-form-field>
+                      </div>  
+
+                      <div style="display: flex; justify-content: center; align-items: center; height: 8vh;">
+                        <mat-form-field>
+                            <mat-label>Senha</mat-label>
+                            <input name="digSenhaapp" matInput placeholder="" [(ngModel)]="digSenha"> 
+                          </mat-form-field>
+                      </div>  
+
+                      <div style="text-align: center; color: rgb(86, 86, 219); ">
+                        <button (click)="btContinuar()" style="width: 210px; height: 40px; background-color: mediumseagreen; color: rgb(0, 0, 0);" type="submit">Continuar</button>
+                      </div> 
+
+                      <div class="criarConta">
+                        <a href="" (click)="lkcrirconta()" style="text-decoration: underline; color: blue;">Deseja criar uma conta?</a>
+                      </div> 
+                      
+
+
+
+                </div>
+
+
+             
+            </form>
+          </mat-card-content>
+        </mat-card>
+      </div>
+   
+  

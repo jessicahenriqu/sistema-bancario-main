@@ -1,0 +1,39 @@
+.container {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    height: 600px; /* Defina a altura desejada em pixels ou outra unidade */
+    width: 600px; /* Defina a largura desejada em pixels ou outra unidade */
+    
+  }
+
+.conta{
+
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px; /* Defina a largura desejada em pixels ou outra unidade */      
+    
+    }
+
+    .logo{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;          
+        
+        }
+
+    .criarConta{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;          
+        
+        }
+
+
+
+        
