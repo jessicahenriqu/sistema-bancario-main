@@ -9,11 +9,12 @@ import { MaterialModule } from './shared/material/material.module';
 import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 import { MenuComponent } from './menu/menu.component';
 import { ClienteModule } from './pages/cliente/cliente.module';
+import { ContaModule } from './bank/conta/conta.module';
 
 @NgModule({
     declarations: [
         AppComponent,
-        MenuComponent,
+        MenuComponent
     ],
     
     imports: [
@@ -27,6 +28,7 @@ import { ClienteModule } from './pages/cliente/cliente.module';
         NgxMaskDirective,
         NgxMaskPipe,
         ClienteModule,
+        ContaModule
     ],
     providers: [provideNgxMask()],
     bootstrap: [AppComponent],

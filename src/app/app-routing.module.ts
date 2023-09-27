@@ -5,11 +5,14 @@ import { CadastroClienteComponent } from
   './pages/cliente/cadastro-cliente/cadastro-cliente.component';
 import { ListagemClienteComponent } from
   './pages/cliente/listagem-cliente/listagem-cliente.component';
+import { CadastrarContaComponent } from './bank/conta/cadastrar-conta/cadastrar-conta.component';
+
 const routes: Routes = [
   {
     path: 'menu',
     component: MenuComponent,
   },
+ 
   
   {
     path: 'cliente',
@@ -33,7 +36,30 @@ const routes: Routes = [
     component: ListagemClienteComponent,
   },
 
+  {
+    path: 'conta',
+    children: [
+      {
+        path: 'nova',
+        component: CadastrarContaComponent
+      },
+      {
+        path: 'editar/:id',
+        component: CadastrarContaComponent
+      }
+
+
+
+    ]
+  },
+
+
+  
+
+
+
 ];
+
 
 
 @NgModule({

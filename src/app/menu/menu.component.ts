@@ -23,7 +23,7 @@ export class MenuComponent {
         showConfirmButton: false,
         timer: 1500
       }).then(() => {
-        this.router.navigate(['/cliente']);
+        this.router.navigate(['/conta']);
       });
     } else {
       console.error(Error);
@@ -35,6 +35,6 @@ export class MenuComponent {
     }
   }
   lkcrirconta(): void {
-    this.router.navigate(['/cliente']);
+    this.router.navigate(['/conta/nova']);
   }
 }

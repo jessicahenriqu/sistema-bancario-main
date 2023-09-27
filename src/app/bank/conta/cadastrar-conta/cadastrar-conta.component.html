@@ -1,0 +1,63 @@
+<div class="container">
+    <mat-card>
+      <p>
+        <mat-toolbar>
+          <span>Cadastrar Conta</span>
+        </mat-toolbar>
+      </p>
+      <mat-card-content>
+        <form class="cadastrarConta">
+
+          <div class="dados">
+     
+            <div class="numeroconta">
+              <mat-form-field style="width: 150%;">
+                <mat-label>Conta</mat-label>
+                <input matInput type="text" [formControl]="numeroConta" required>
+                <mat-error *ngIf="numeroConta.invalid">{{getErrorMessage(numeroConta)}}</mat-error>
+              </mat-form-field>
+            </div>
+      
+
+            <div class="agenciaconta">
+              <mat-form-field style="width: 150%;">
+                <mat-label>Agencia</mat-label>
+                <input matInput type="text"  [formControl]="agencia" required >
+                <mat-error *ngIf="agencia.invalid">{{getErrorMessage(agencia)}}</mat-error>
+              </mat-form-field>
+            </div>
+         
+
+            <div class="valor">
+              <mat-form-field style="width: 150%;">
+                <mat-label>Qual valor deseja depositar?</mat-label>
+                <input matInput type="number" [formControl]="valor" required>
+                <mat-error *ngIf="valor.invalid">{{getErrorMessage(valor)}}</mat-error>
+              </mat-form-field>
+            </div>
+      
+
+  
+            <div class="idcliente">
+              <mat-form-field style="width: 150%;">
+                <mat-label>Cliente</mat-label>
+                <input matInput type="number" [formControl]="cliente" required>
+                <mat-error *ngIf="cliente.invalid">{{getErrorMessage(cliente)}}</mat-error>
+              </mat-form-field>
+            </div>
+      
+          
+            <div class="cadastrar">
+            <div style="text-align: center; color: rgb(86, 86, 219); ">
+                <button (click)="cadastrar()" style="width: 250px; height: 40px; background-color: mediumseagreen; color: rgb(0, 0, 0);" type="submit">Cadastrar</button>
+              </div> 
+            </div>
+
+            
+
+          </div>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  
